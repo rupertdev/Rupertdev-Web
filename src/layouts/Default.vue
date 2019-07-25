@@ -1,15 +1,15 @@
 <template>
   <b-container>
     <b-row class="body-row">
-      <b-col cols=3>
+      <b-col cols=3 class="d-table">
         <SocialPane></SocialPane>
       </b-col>
-        <b-col cols=8>
+        <b-col cols=8 class="col-xs-12">
         <div class="layout">
           <slot/>
         </div>
       </b-col>
-      <b-col cols=.5>
+      <b-col cols=.5 class="d-none">
         <SideNav></SideNav>
       </b-col>
     </b-row>
