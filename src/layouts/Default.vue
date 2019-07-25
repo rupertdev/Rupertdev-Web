@@ -9,7 +9,7 @@
           <slot/>
         </div>
       </b-col>
-      <b-col cols=.5 class="d-none">
+      <b-col cols=.5>
         <SideNav></SideNav>
       </b-col>
     </b-row>
