@@ -1,9 +1,5 @@
 <template>
   <Layout>
-    <!-- <header class="header">
-      <h1 v-html="$page.metaData.siteName" />
-      <p v-html="$page.metaData.siteDescription" />
-    </header> -->
     <section class="posts">
       <PostList v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
     </section>
@@ -17,7 +13,7 @@ export default {
     PostList
   },
   metaInfo: {
-    title: "RupertDev"
+    title: "Home"
   }
 };
 </script>

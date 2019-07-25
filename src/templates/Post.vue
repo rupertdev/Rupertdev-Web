@@ -24,3 +24,9 @@ query Post ($path: String!) {
   }
 }
 </page-query>
+
+<style>
+.post-title {
+  font-family: 'Work Sans', sans-serif
+}
+</style>

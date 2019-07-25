@@ -1,16 +1,19 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
-      </nav>
-    </header>
-    <slot/>
-  </div>
+  <b-container>
+    <b-row class="body-row">
+      <b-col cols=3>
+        <SocialPane></SocialPane>
+      </b-col>
+        <b-col cols=8>
+        <div class="layout">
+          <slot/>
+        </div>
+      </b-col>
+      <b-col cols=.5>
+        <SideNav></SideNav>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <static-query>
@@ -21,23 +24,42 @@ query {
 }
 </static-query>
 
+<script>
+import SideNav from "@/components/SideNav";
+import SocialPane from "@/components/SocialPane"
+export default {
+    components: {
+    SideNav,
+    SocialPane
+  },
+}
+</script>
+
 <style>
+template {
+  font-family: 'Roboto', sans-serif;
+}
 body {
-  font-family: "helvetica";
+  font-family: "Roboto";
   margin:0;
   padding:0;
   line-height: 1.5;
 }
 
+.container {
+  max-width: 90%;
+}
+.body-row {
+  margin-top: 25px;
+}
+
 .layout {
-  max-width: 760px;
-  margin: 0 auto;
+  max-width: 90%;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .header {
-  font-family: "helvetica";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +67,4 @@ body {
   height: 80px;
 }
 
-.nav__link {
-  margin-left: 20px;
-}
 </style>

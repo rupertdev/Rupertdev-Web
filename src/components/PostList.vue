@@ -1,6 +1,6 @@
 <template>
   <div class="post-list">
-    <hr class="line" />
+    <!-- <hr class="line" /> -->
     <p class="date" v-html="post.date" />
     <h1 class="title" v-html="post.title" />
     <p class="description" v-html="post.description" />
@@ -14,3 +14,9 @@ export default {
   props: ["post"],
 };
 </script>
+
+<style>
+.title {
+  font-family: 'Work Sans', sans-serif
+}
+</style>
