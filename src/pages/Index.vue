@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="posts">
-      <PostList v-for="edge in $page.allPost.edges.slice().reverse()"  :key="edge.node.id" :post="edge.node" />
+      <PostList v-for="edge in $page.allPost.edges.slice()"  :key="edge.node.id" :post="edge.node" />
     </section>
   </Layout>
 </template>
