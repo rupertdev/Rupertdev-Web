@@ -29,4 +29,13 @@ query Post ($path: String!) {
 .post-title {
   font-family: 'Work Sans', sans-serif
 }
+h2 {
+  font-family: 'Work Sans', sans-serif;
+}
+h3 {
+  font-family: 'Work Sans', sans-serif;
+}
+p {
+  padding-left: 10px;
+}
 </style>
