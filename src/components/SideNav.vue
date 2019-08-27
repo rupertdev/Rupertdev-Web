@@ -11,6 +11,9 @@
                     About <t v-if="$route.path == '/about'"> <<< </t>
                 </g-link>
             </b-nav-item>
+            <b-nav-item>
+                <g-link class="nav__link" to="/rss.xml">RSS</g-link>
+            </b-nav-item>
         </b-nav>
     </div>
 </template>
