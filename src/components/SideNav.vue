@@ -12,7 +12,7 @@
                 </g-link>
             </b-nav-item>
             <b-nav-item>
-                <g-link class="nav__link" to="/rss.xml">RSS</g-link>
+                <a class="nav__link" href="/rss.xml">RSS</a>
             </b-nav-item>
         </b-nav>
     </div>
