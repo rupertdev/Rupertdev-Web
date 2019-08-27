@@ -16,7 +16,7 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
-    "jquery": "^1.9.1",
+    "jquery": "^3.4.1",
     "tachyons": "^4.10.0"
   }
 }
