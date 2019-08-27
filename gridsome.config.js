@@ -17,6 +17,28 @@ module.exports = {
         typeName: 'Post',
         route: '/blog/:slug'
       }
+    },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        latest: true,
+        contentTypeName: 'Post',
+        feedOptions: {
+          title: 'RupertDev Blog',
+          feed_url: 'https://rupertdev.com/rss.xml',
+          site_url: 'https://rupertdev.com'
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.description,
+          url: 'https://rupertdev.com/blog/' + node.slug,
+          author: 'Michael Rupert <michaelrupert@fastmail.com>'
+        }),
+        output: {
+          dir: './static',
+          name: 'rss.xml'
+        }
+      }
     }
   ]
 }
