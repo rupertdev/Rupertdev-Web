@@ -1,15 +1,20 @@
 <template>
   <b-container>
+    <script
+      data-goatcounter="https://rupertdev.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
     <b-row class="body-row">
-      <b-col cols=3 class="d-table">
+      <b-col cols="3" class="d-table">
         <SocialPane></SocialPane>
       </b-col>
-        <b-col cols=8 class="col-xs-12">
+      <b-col cols="8" class="col-xs-12">
         <div class="layout">
-          <slot/>
+          <slot />
         </div>
       </b-col>
-      <b-col cols=.5>
+      <b-col cols="0.5">
         <SideNav></SideNav>
       </b-col>
     </b-row>
@@ -26,23 +31,23 @@ query {
 
 <script>
 import SideNav from "@/components/SideNav";
-import SocialPane from "@/components/SocialPane"
+import SocialPane from "@/components/SocialPane";
 export default {
-    components: {
+  components: {
     SideNav,
-    SocialPane
+    SocialPane,
   },
-}
+};
 </script>
 
 <style>
 template {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
   font-family: "Roboto";
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
 }
 
@@ -66,5 +71,4 @@ body {
   margin-bottom: 20px;
   height: 80px;
 }
-
 </style>
