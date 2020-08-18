@@ -1,10 +1,5 @@
 <template>
   <b-container>
-    <script
-      data-goatcounter="https://rupertdev.goatcounter.com/count"
-      async
-      src="//gc.zgo.at/count.js"
-    ></script>
     <b-row class="body-row">
       <b-col cols="3" class="d-table">
         <SocialPane></SocialPane>
@@ -28,7 +23,8 @@ query {
   }
 }
 </static-query>
-
+<script data-goatcounter="https://rupertdev.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 <script>
 import SideNav from "@/components/SideNav";
 import SocialPane from "@/components/SocialPane";
@@ -36,6 +32,14 @@ export default {
   components: {
     SideNav,
     SocialPane,
+  },
+  metaInfo: {
+    script: [
+      {
+        src: "//gc.zgo.at/count.js",
+        "data-goatcounter": "https://rupertdev.goatcounter.com/count",
+      },
+    ],
   },
 };
 </script>
