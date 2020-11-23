@@ -26,16 +26,16 @@ query {
 
 
 <script>
-
-window.panelbear = window.panelbear || function(){ window.panelbearQ = window.panelbearQ || []; panelbearQ.push(arguments); };
-panelbear('config', { site: '3nEU3rPSvvh' })
-
 import SideNav from "@/components/SideNav";
 import SocialPane from "@/components/SocialPane";
 export default {
   components: {
     SideNav,
     SocialPane,
+  },
+  mounted: function() {
+    window.panelbear = window.panelbear || function(){ window.panelbearQ = window.panelbearQ || []; panelbearQ.push(arguments); };
+    panelbear('config', { site: '3nEU3rPSvvh' })
   },
   metaInfo: {
     script: [
