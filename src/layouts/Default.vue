@@ -23,9 +23,11 @@ query {
   }
 }
 </static-query>
-<script data-goatcounter="https://rupertdev.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+<script async src="https://cdn.panelbear.com/analytics.js?site=3nEU3rPSvvh"></script>
 <script>
+    window.panelbear = window.panelbear || function(){ window.panelbearQ = window.panelbearQ || []; panelbearQ.push(arguments); };
+    panelbear('config', { site: '3nEU3rPSvvh' });
+</script>
 import SideNav from "@/components/SideNav";
 import SocialPane from "@/components/SocialPane";
 export default {
