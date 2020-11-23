@@ -23,11 +23,13 @@ query {
   }
 }
 </static-query>
-<script async src="https://cdn.panelbear.com/analytics.js?site=3nEU3rPSvvh"></script>
+
+
 <script>
-    window.panelbear = window.panelbear || function(){ window.panelbearQ = window.panelbearQ || []; panelbearQ.push(arguments); };
-    panelbear('config', { site: '3nEU3rPSvvh' });
-</script>
+
+window.panelbear = window.panelbear || function(){ window.panelbearQ = window.panelbearQ || []; panelbearQ.push(arguments); };
+panelbear('config', { site: '3nEU3rPSvvh' })
+
 import SideNav from "@/components/SideNav";
 import SocialPane from "@/components/SocialPane";
 export default {
@@ -37,13 +39,11 @@ export default {
   },
   metaInfo: {
     script: [
-      {
-        src: "//gc.zgo.at/count.js",
-        "data-goatcounter": "https://rupertdev.goatcounter.com/count",
-      },
+      { src: "https://cdn.panelbear.com/analytics.js?site=3nEU3rPSvvh", async: true },
     ],
   },
 };
+
 </script>
 
 <style>

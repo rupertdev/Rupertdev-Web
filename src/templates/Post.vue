@@ -38,4 +38,16 @@ h3 {
 p {
   padding-left: 10px;
 }
+img {
+  max-width: 80%;
+  max-height: 756px;
+  margin: auto;
+  display: block;
+}
+label {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  color: grey;
+}
 </style>

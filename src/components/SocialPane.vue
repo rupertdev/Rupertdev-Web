@@ -6,7 +6,7 @@
             </b-col>
             <b-col class="sm-col">
                 <h4 class="name-text"><a style="color:black" href="">Michael Rupert</a></h4>
-                <a href="https://twitter.com/Spoopert" class="sm-link">🐦&nbsp;Twitter</a>&nbsp;<a href="https://github.com/rupertdev" class="sm-link">⌨️&nbsp;Git</a>&nbsp;
+                <a href="https://twitter.com/rupert_dev" class="sm-link">🐦&nbsp;Twitter</a>&nbsp;<a href="https://github.com/rupertdev" class="sm-link">⌨️&nbsp;Git</a>&nbsp;
                 <a href="mailto:michaelrupert@fastmail.com">✉️&nbsp;michaelrupert@fastmail.com</a>
             </b-col>
         </b-row>

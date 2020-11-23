@@ -3,12 +3,12 @@
         <b-nav vertical class="w-100">
             <b-nav-item>
                 <g-link class="nav__link" to="/">
-                    Home <t v-if="$route.path == '/'"> <<< </t>
+                    Home <label v-if="$route.path == '/'"> <<< </label>
                 </g-link>
             </b-nav-item>
             <b-nav-item>
                 <g-link class="nav__link" to="/about">
-                    About <t v-if="$route.path == '/about'"> <<< </t>
+                    About <label v-if="$route.path == '/about'"> <<< </label>
                 </g-link>
             </b-nav-item>
             <b-nav-item>
@@ -39,5 +39,9 @@ export default {
     .nav__link {
         color: black;
         white-space: nowrap;
+    }
+    label {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
 </style>
